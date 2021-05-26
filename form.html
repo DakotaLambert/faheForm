@@ -1,0 +1,241 @@
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+
+<style>
+  body {
+    margin: auto;
+    background-color: #ffffff;
+  }
+
+  .formLabel {
+    margin-bottom: 8px;
+    display: block;
+    font: 14px Helvetica, Arial, sans-serif;
+  }
+  .formHeader {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 30px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+
+  .footer {
+    background-color: #0073ae;
+    height: 44px;
+
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .asterisk {
+    color: #e85c41;
+    font-size: 150%;
+    font-weight: normal;
+    position: relative;
+    top: 5px;
+  }
+
+  .indicatesRequired {
+    text-align: right;
+    font-size: 11px;
+    margin-right: 4%;
+  }
+
+  #formContainer {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  #formBox {
+    border-width: 3px;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .formField {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    text-indent: 2%;
+  }
+
+  #formSet {
+    clear: left;
+    position: relative;
+    padding-bottom: 0.5rem;
+    min-height: 50px;
+    margin: 0 2rem 0 2rem;
+  }
+
+  .headerDiv {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .submitButton {
+    clear: both;
+    background-color: #aaa;
+    border: 0 none;
+    border-radius: 4px;
+    transition: all 0.23s ease-in-out 0s;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: normal;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 5px 5rem 2rem;
+    padding: 0 22px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: auto;
+  }
+
+  .topHeader {
+    background-color: #0073ae;
+    border-top: 0 solid #ffffff;
+    font-weight: normal;
+    min-height: 44px;
+    padding: 0;
+    text-align: right;
+  }
+</style>
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
+<div class="topHeader"></div>
+<div class="headerDiv">
+  <img id="headerLogo" src="fahe-logo-291x100-1.gif" alt="Fahe's Logo" />
+</div>
+<form
+  method="POST"
+  id="formContainer"
+>
+  <input type="hidden" name="oid" value="00D5e000000LADd" />
+  <input type="hidden" name="retURL" value="http://www.justchoicelending.com" />
+
+  <!--  ----------------------------------------------------------------------  -->
+  <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+  <!--  these lines if you wish to test in debug mode.                          -->
+  <!--  <input type="hidden" name="debug" value=1>                              -->
+  <!--  <input type="hidden" name="debugEmail" value="sball@fahe.org">          -->
+  <!--  ----------------------------------------------------------------------  -->
+  <div id="formBox">
+    <!-- <div id="formBox"> -->
+    <div>
+      <h2 class="formHeader">Submit Form</h2>
+    </div>
+    <div class="indicatesRequired">
+      <span class="asterisk">*</span>
+      indicates required
+    </div>
+
+    <div id="formSet">
+      <label for="first_name" class="formLabel"
+        >First Name<span class="asterisk">*</span></label
+      >
+      <input
+        id="first_name"
+        class="formField"
+        maxlength="40"
+        name="first_name"
+        size="20"
+        type="text"
+      />
+    </div>
+    <br />
+
+    <div id="formSet">
+      <label for="last_name" class="formLabel"
+        >Last Name<span class="asterisk">*</span></label
+      >
+      <input
+        id="last_name"
+        class="formField"
+        maxlength="80"
+        name="last_name"
+        size="20"
+        type="text"
+      />
+    </div>
+    <br />
+
+    <div id="formSet">
+      <label for="email" class="formLabel"
+        >Email<span class="asterisk">*</span></label
+      >
+      <input
+        id="email"
+        class="formField"
+        maxlength="80"
+        name="email"
+        size="20"
+        type="text"
+      />
+    </div>
+    <br />
+
+    <div id="formSet">
+      <label for="company" class="formLabel"
+        >Company<span class="asterisk">*</span></label
+      >
+      <input
+        id="company"
+        class="formField"
+        maxlength="40"
+        name="company"
+        size="20"
+        type="text"
+      />
+    </div>
+    <br />
+
+    <div id="formSet">
+      <label for="city" class="formLabel"
+        >City<span class="asterisk">*</span></label
+      >
+      <input
+        id="city"
+        class="formField"
+        maxlength="40"
+        name="city"
+        size="20"
+        type="text"
+      />
+    </div>
+    <br />
+    <div id="formSet">
+      <label for="state" class="formLabel"
+        >State/Province<span class="asterisk">*</span></label
+      >
+      <input
+        id="state"
+        class="formField"
+        maxlength="20"
+        name="state"
+        size="20"
+        type="text"
+      />
+    </div>
+    <br />
+    <input type="submit" name="submit" class="submitButton" />
+    <!-- </div> -->
+  </div>
+</form>
+<div class="footer">
+  <footer></footer>
+</div>
